@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/felipefernandesdev/node-template-base/issues"
   },
-  "homepage": "https://github.com/felipefernandesdev/node-template-base#readme"
+  "homepage": "https://github.com/felipefernandesdev/node-template-base#readme",
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
 }
