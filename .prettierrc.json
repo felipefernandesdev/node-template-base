@@ -1,8 +1,9 @@
 {
-  "trailingComma": "all",
-  "singleQuote": true,
-  "endOfLine": "lf",
-  "tabWidth": 4,
-  "arrowParens": "avoid",
-  "printWidth": 80
+    "trailingComma": "all",
+    "singleQuote": true,
+    "endOfLine": "lf",
+    "tabWidth": 4,
+    "arrowParens": "avoid",
+    "printWidth": 80,
+    "filepath": "./.prettierrc.json"
 }

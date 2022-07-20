@@ -1,13 +1,4 @@
-const numero = 2;
-console.log(numero);
-
-if (
-  numasdfasdfsdfasdfsadfsadfasdfero == 2
-  && numeasdfasdfsdfasdfsadfsadfasdfro == 2
-  && numeasdfasdfsdfasdfsadfsadfasdfro == 2
-  && numasdfasdfsdfasdfsadfsadfasdfero == 2
-  && numasdfasdfsdfasdfsadfsadfasdfero == 2
-  && numasdfasdfsdfasdfsadfsadfasdfero == 2
-  && numasdfasdfsdfasdfsadfsadfasdfero == 2
-) {
+const variavelNumero = '2';
+if (variavelNumero === 2 && variavelNumero === 2) {
+    console.info('data');
 }
