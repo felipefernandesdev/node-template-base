@@ -1,26 +1,40 @@
 {
-  "name": "template-base",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "prettier": "npx prettier --write --ignore-unknown ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/felipefernandesdev/node-template-base.git"
-  },
-  "keywords": [],
-  "author": "Felipe Fernandes",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/felipefernandesdev/node-template-base/issues"
-  },
-  "homepage": "https://github.com/felipefernandesdev/node-template-base#readme",
-  "devDependencies": {
-    "eslint": "^8.20.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "prettier": "npm:@btmills/prettier@^2.7.1"
-  }
+    "name": "template-base",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "prettier": "npx prettier --write --ignore-unknown ."
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npx lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.js": [
+            "npx pretty-quick --staged",
+            "npx eslint --fix src --ext .js"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/felipefernandesdev/node-template-base.git"
+    },
+    "keywords": [],
+    "author": "Felipe Fernandes",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/felipefernandesdev/node-template-base/issues"
+    },
+    "homepage": "https://github.com/felipefernandesdev/node-template-base#readme",
+    "devDependencies": {
+        "eslint": "^8.20.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "husky": "^4.3.8",
+        "lint-staged": "^13.0.3",
+        "prettier": "npm:@btmills/prettier@^2.7.1",
+        "pretty-quick": "^3.1.3"
+    }
 }
